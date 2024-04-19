@@ -113,7 +113,6 @@ void autoMode() {
   weboutput();
   //goes through all values to find the angle for maxLight
   for (int i = 0; i < 180; i += 10) {
-    Serial.print("autoin-----------------------------");
     servoBase.write(i);
     delay(500);
     lightVal1 = analogRead(sensorPin1);
